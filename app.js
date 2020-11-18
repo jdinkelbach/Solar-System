@@ -3,7 +3,7 @@ const app = express();
 
 // Routes
 app.get("/", function(req, res){
-    res.send("it works!"); 
+    res.render("it works!"); 
 });
 
 app.get("/mercury", function(req, res){
