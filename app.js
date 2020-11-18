@@ -1,17 +1,18 @@
 const express = require("express");
 const app = express();
+app.engine('html', require('ejs').renderFile);
 
 // Routes
 app.get("/", function(req, res){
-    res.render("it works!"); 
+    res.render("index.html"); 
 });
 
 app.get("/mercury", function(req, res){
-    res.send("Mercury webpage"); 
+    res.render("mercury.html"); 
 });
 
 app.get("/venus", function(req, res){
-    res.send("Venus webpage"); 
+    res.render("venus.html"); 
 });
 
 // Starting Server (PORT, IP)
