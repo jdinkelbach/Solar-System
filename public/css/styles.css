@@ -8,6 +8,7 @@ body{
     margin: 0;
     color: white;
     background-color: black;
+    overflow: hidden;
 }
 
 a{
@@ -17,6 +18,7 @@ a{
     color: white;
     margin: 1% 3%;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 a:hover{
@@ -25,12 +27,16 @@ a:hover{
 
 #system{
     width: 100%;
-    opacity: .8;
+    opacity: .5;
 }
 
-#mercury{
-    width: 40%;
-    margin-top: 5%;
+.planet{
+    border: 5px solid white;
+    width: 45%;
+}
+
+.info{
+    width: 45%;
 }
 
 footer{
@@ -39,4 +45,13 @@ footer{
     left: 0;
     text-align: center;
     width: 100%;
+    padding: 1% 0;
+    color: lightgray;
+}
+
+.flex{
+    width: 60%;
+    display: flex;
+    margin: 5% auto 0;
+    justify-content: space-between;
 }
